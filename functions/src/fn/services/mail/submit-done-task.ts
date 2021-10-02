@@ -14,7 +14,7 @@ export default async (
   console.log("/submitDonetask");
 
   const {
-    input: {taskName, ownerMail, displayname, url},
+    input: {taskName, ownerMail, displayName, url},
   } = req.body.input;
 
 
@@ -22,7 +22,7 @@ export default async (
   try {
     return cors(req, res, () => {
       const text = `<div>
-      <h4>${displayname} just move task: <a href=${url}'>${taskName}</a>  to Done</h4>
+      <h4>${displayName} just move task: <a href=${url}'>${taskName}</a>  to Done</h4>
       
     </div>`;
       const sesAccessKey = "team4mco@outlook.com";
