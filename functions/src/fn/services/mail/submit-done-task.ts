@@ -22,7 +22,7 @@ export default async (
   try {
     return cors(req, res, () => {
       const text = `<div>
-      <h4>${displayName} just move task: <a href=${url}'>${taskName}</a>  to Done</h4>
+      <h4>${displayName} just move task: <a href=${url}>${taskName}</a>  to Done</h4>
       
     </div>`;
       const sesAccessKey = "team4mco@outlook.com";
